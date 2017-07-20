@@ -1,0 +1,39 @@
+# These Lines Added By Hosting Company please do not remove
+<IfModule mod_suphp.c>
+suPHP_ConfigPath /home/etobemx/public_html
+</IfModule>
+
+<Files php.ini>
+order allow,deny
+deny from all
+</Files>
+
+#No permite el acceso al htaccess desde la web
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# End of Hosting Company entries
+
+RewriteEngine On 
+
+#forzas a https
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://etobe.mx/$1 [R,L]
+
+#Quitar el www
+RewriteCond %{HTTP_HOST} ^www.etobe.mx [NC]
+RewriteRule ^(.*)$ http://etobe.mx/$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+#RewriteCond %{HTTP_REFERER} !^http://(.+\.)?etobe\.mx/ [NC]
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteRule .*\.(jpg|gif|bmp|png)$ http://etobe.mx/no_se_permite_hotlinking.jpg [L]
+
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
+SetEnv CI_ENV production
+SetEnv CI_SERVER server
