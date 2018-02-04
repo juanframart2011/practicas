@@ -1,0 +1,956 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"script",
+				"script\t<script>"
+			],
+			[
+				"collec",
+				"$collection_encrypted〔variable〕"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"descr",
+				"description〔variable〕"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"padi",
+				"padding-right"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"ex",
+				"$exception〔variable〕"
+			],
+			[
+				"resul",
+				"$result_collection〔variable〕"
+			],
+			[
+				"collection",
+				"$collection〔variable〕"
+			],
+			[
+				"Route",
+				"Route::get\tBasic Get Route."
+			],
+			[
+				"styl",
+				"style\tHTML - Stylesheet link"
+			],
+			[
+				"style",
+				"style\t<style>"
+			],
+			[
+				"text",
+				"text-left"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"lin",
+				"link\tTag"
+			],
+			[
+				"sty",
+				"style\tAttr"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"set",
+				"setInterval〔function〕"
+			],
+			[
+				"check",
+				"checking_valores〔variable〕"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"container",
+				"div.container"
+			],
+			[
+				"sessio",
+				"session_destroy"
+			],
+			[
+				"json",
+				"json_encode〔function〕"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"row",
+				"div.row"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"link",
+				"links\tlink - stylesheet"
+			],
+			[
+				"content_add",
+				"$content_add〔variable〕"
+			],
+			[
+				"histo",
+				"history_count"
+			],
+			[
+				"History",
+				"HistoryGallery"
+			],
+			[
+				"Hi",
+				"HistoryGallery"
+			],
+			[
+				"error",
+				"$error_name〔variable〕"
+			],
+			[
+				"data",
+				"$data_error〔variable〕"
+			],
+			[
+				"ty",
+				"$type_array〔variable〕"
+			],
+			[
+				"type",
+				"type_array"
+			],
+			[
+				"prin",
+				"print_r〔function〕"
+			],
+			[
+				"remove",
+				"removeClass〔function〕"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"emp",
+				"empty"
+			],
+			[
+				"hei",
+				"height_content"
+			],
+			[
+				"he",
+				"height\t.height()"
+			],
+			[
+				"histor",
+				"history_encrypted"
+			],
+			[
+				"history_e",
+				"$history_encrypted〔variable〕"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"hist",
+				"history〔variable〕"
+			],
+			[
+				"select",
+				"select\tTag"
+			],
+			[
+				"history_a",
+				"$history_add〔variable〕"
+			],
+			[
+				"col-",
+				"col-md-12"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"form",
+				"form_contact〔variable〕"
+			],
+			[
+				"reove",
+				"removeClass\t.removeClass()"
+			],
+			[
+				"add",
+				"addClass〔function〕"
+			],
+			[
+				"va",
+				"$validator_image〔variable〕"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"banner_",
+				"banner_encrypted"
+			],
+			[
+				"Bann",
+				"Banner"
+			],
+			[
+				"bann",
+				"bannerType_encrypted"
+			],
+			[
+				"banner",
+				"$bannerType〔variable〕"
+			],
+			[
+				"Banne",
+				"BannerType"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"col-md-off",
+				"col-md-offset-3 \tBootstrap 3 Class"
+			],
+			[
+				"col-lg-of",
+				"col-lg-offset-3 \tBootstrap 3 Class"
+			],
+			[
+				"user_na",
+				"$user_name〔variable〕"
+			],
+			[
+				"site_de",
+				"$site_delete〔variable〕"
+			],
+			[
+				"Postul",
+				"Postulate"
+			],
+			[
+				"title",
+				"title\tAttr"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"fom",
+				"form-group \tBootstrap 3 Class"
+			],
+			[
+				"col-md",
+				"col-md-2"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"form-",
+				"form-group"
+			],
+			[
+				"conso",
+				"console.info();"
+			],
+			[
+				"not",
+				"$notification_update〔variable〕"
+			],
+			[
+				"noti",
+				"notification"
+			],
+			[
+				"Not",
+				"Notification"
+			],
+			[
+				"list_exc",
+				"$list_excel〔variable〕"
+			],
+			[
+				"list_e",
+				"$list_excel〔variable〕"
+			],
+			[
+				"bandera",
+				"bandera_p"
+			],
+			[
+				"tot",
+				"$total_tipos〔variable〕"
+			],
+			[
+				"where",
+				"$where_tp〔variable〕"
+			],
+			[
+				"where_t",
+				"where_tp"
+			],
+			[
+				"ses",
+				"session_set_userdata\tCI - Session - Adding Custom Session Data"
+			],
+			[
+				"session",
+				"session_userdata\tCI - Session - Retrieving Session Data"
+			],
+			[
+				"g",
+				"angular: $http"
+			],
+			[
+				"http",
+				"http.get(options, cb);"
+			],
+			[
+				"scope",
+				"$scope〔argument〕"
+			],
+			[
+				"cont",
+				"controller\tAngular.js"
+			],
+			[
+				"module",
+				"module.Module(id, parent);"
+			],
+			[
+				"mo",
+				"module\tQUnit module"
+			],
+			[
+				"Pos",
+				"PostulateStatus〔class〕"
+			],
+			[
+				"notif",
+				"$notification〔variable〕"
+			],
+			[
+				"notifi",
+				"$notification〔variable〕"
+			],
+			[
+				"notifica",
+				"notification_add"
+			],
+			[
+				"ini",
+				"initMap〔function〕"
+			],
+			[
+				"Postu",
+				"PostulateStatus〔namespace〕"
+			],
+			[
+				"pos",
+				"postulate_update"
+			],
+			[
+				"Post",
+				"PostulateStatus"
+			],
+			[
+				"_",
+				"_head_reset"
+			],
+			[
+				"vacant_id",
+				"$vacant_id〔variable〕"
+			],
+			[
+				"return",
+				"returnF〔variable〕"
+			],
+			[
+				"vaca",
+				"$vacant_visit〔variable〕"
+			],
+			[
+				"vacant",
+				"$vacant_resultSearch〔variable〕"
+			],
+			[
+				"vacant_",
+				"vacant_visit"
+			],
+			[
+				"Vacant",
+				"VacantVisit"
+			],
+			[
+				"btn",
+				"btn-block \tBootstrap 3 Class"
+			],
+			[
+				"inputt",
+				"inputt\tinput - text"
+			],
+			[
+				"pritn",
+				"print_r"
+			],
+			[
+				"estad",
+				"$estado_data〔variable〕"
+			],
+			[
+				"estado",
+				"estado_id"
+			],
+			[
+				"est",
+				"$estado_data〔variable〕"
+			],
+			[
+				"remo",
+				"removeClass〔function〕"
+			],
+			[
+				"U",
+				"uppercase"
+			],
+			[
+				"tex",
+				"text-left \tBootstrap 3 Class"
+			],
+			[
+				"Vaca",
+				"VacantCategory〔namespace〕"
+			],
+			[
+				"img",
+				"image:responsive\tresponsive"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "server/index.js",
+			"settings":
+			{
+				"buffer_size": 655,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "view/public/main.js",
+			"settings":
+			{
+				"buffer_size": 73,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "view/index.html",
+			"settings":
+			{
+				"buffer_size": 193,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "packa",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Laravel ",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 741.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Program Files (x86)/Ampps/www/Practicas/chat",
+		"/C/Program Files (x86)/Ampps/www/Practicas/chat/view"
+	],
+	"file_history":
+	[
+		"/C/Program Files (x86)/Ampps/www/Practicas/chat/view/index.html",
+		"/C/Program Files (x86)/Ampps/www/Practicas/chat/package.json",
+		"/C/Program Files (x86)/Ampps/www/Practicas/chat/index.html",
+		"/C/Users/JDK/Downloads/ROOT Y5 II/Comandos ADB.txt",
+		"/C/Users/JDK/Documents/FR/Merx/vagrant/restore-akra.sh",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/section/project.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/home.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/helper/footer.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/section/carousel.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/css/collection_project.css",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/section/collection.blade.php",
+		"/C/Users/JDK/AppData/Local/Temp/fz3temp-2/error_log",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/4dm1n/js/slider.js",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/admin/template/slider_list.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/app/Http/Controllers/Admin/SliderController.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/app/Http/Controllers/Admin/ProjectController.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/admin/slider/slider_create.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/admin/slider/slider_form.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/app/Slider.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/admin/slider/slider.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/routes/web.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/app/Http/Controllers/HomeController.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/4dm1n/plugins/bootstrap/css/bootstrap.min.css",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/4dm1n/css/main.css",
+		"/C/Program Files (x86)/Ampps/www/template/htaccess_ecommerce/.htaccess",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/css/main.css",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/helper/menu.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/js/plugin/boxlayout.js",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/css/plugin/component.css",
+		"/C/Program Files (x86)/Ampps/www/Practicas/FullscreenLayoutPageTransitions/css/component.css",
+		"/C/Program Files (x86)/Ampps/www/Practicas/FullscreenLayoutPageTransitions/index.html",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/section/press.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/section/contact.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/main.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/js/plugin/loader.js",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/FullscreenLayoutPageTransitions/index.html",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/helper/head.blade.php",
+		"/C/Program Files (x86)/Ampps/www/inssoft/adh_dev/custom/modules/Users/views/view.list.php",
+		"/C/Program Files (x86)/Ampps/www/inssoft/adh_dev/include/Popups/PopupSmarty.php",
+		"/C/Program Files (x86)/Ampps/www/inssoft/adh_dev/include/MVC/View/views/view.popup.php",
+		"/C/Program Files (x86)/Ampps/www/inssoft/adh_dev/modules/Users/views/view.list.php",
+		"/C/Program Files (x86)/Ampps/www/inssoft/adh_dev/modules/Users/metadata/listviewdefs.php",
+		"/C/Program Files (x86)/Ampps/www/inssoft/adh_dev/custom/modules/Users/views/view.popup.php",
+		"/C/Program Files (x86)/Ampps/www/inssoft/adh_dev/include/Popups/tpls/PopupGeneric.tpl",
+		"/C/Program Files (x86)/Ampps/www/inssoft/adh_dev/config.php",
+		"/C/Users/JDK/Documents/FR/Merx/vagrant/akra/sugarcrm.log",
+		"/C/Users/JDK/Documents/FR/Merx/vagrant/akra/config.php",
+		"/C/Users/JDK/Documents/FR/Merx/vagrant/akra/.htaccess",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/storage/logs/laravel.log",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/config/app.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/.env",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/collection.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/public/project.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/js/plugin/salvattore.min.js",
+		"/C/Users/JDK/Downloads/salvattore-master/examples/salvattore.html",
+		"/C/Users/JDK/Downloads/salvattore-master/examples/styles.css",
+		"/C/Users/JDK/Downloads/salvattore-master/examples/salvattore.css",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/resources/views/error/not_found.blade.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/app/Exceptions/Handler.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/pirelli/tab_moto/data/category_1.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/pirelli/tab_moto/data/gama2.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/pirelli/tab_moto/data/gama3.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/pirelli/tab_moto/data/gama4.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/pirelli/tab_moto/data/gama5.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/pirelli/tab_moto/data/gama1.php",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/pirelli/tab_moto/index.php",
+		"/C/Users/JDK/Desktop/actividades.txt",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/css/plugin/zoomwall.css",
+		"/C/Users/JDK/Documents/FR/Merx/vagrant/restore-akra - copia.sh",
+		"/C/Users/JDK/Desktop/nginx-1.10.3/conf/nginx.conf",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/plugins/entrada-vc-addons/vc-extended-shortcode.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/style.css",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/footer.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/woocommerce/content-single-product.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/woocommerce/content-product.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/tour-listing.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/shop-list.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/shop-grid.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/search-list.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/search-grid.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/list-withdetail.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/list-sidebar.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/list-general.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/list-fullwidth.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/grid-withdetail.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/grid-twocolumn.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/grid-threecolumn.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/grid-sidebar.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/grid-fullwidth.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/grid-fourcolumn.php",
+		"/C/Users/JDK/Documents/FR/Derrrumbe/accesos.txt",
+		"/C/Users/JDK/Documents/FR/interactive_valley/accesos.txt",
+		"/C/Users/JDK/Documents/FR/Etobe/accesos.txt",
+		"/C/Users/JDK/Documents/FR/Mendoza/accesos.txt",
+		"/C/Users/JDK/Documents/FR/Merx/datos.txt",
+		"/C/Users/JDK/Documents/FR/interactive_valley/thebehouse/datos.txt",
+		"/C/Users/JDK/Documents/FR/credimpulsa/datos.txt",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/js/carousel.js",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/js/main.js",
+		"/C/Users/JDK/Downloads/AnimatedFrameSlideshow/index4.html",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/css/base.css",
+		"/C/Users/JDK/Downloads/AnimatedFrameSlideshow/index4 - copia.html",
+		"/C/Users/JDK/Downloads/AnimatedFrameSlideshow/css/base.css",
+		"/C/Users/JDK/Downloads/AnimatedFrameSlideshow/js/demo.js",
+		"/C/Users/JDK/Downloads/AnimatedFrameSlideshow/js/demo4.js",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/css/plugin/bootstrap/bootstrap.min.css",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/js/plugin/lazysizes/ls.bgset.min.js",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/js/plugin/lazysizes/ls.unveilhooks.min.js",
+		"/C/Program Files (x86)/Ampps/www/Interactive Valley/porthoz/public/js/plugin/lazysizes/lazysizes.min.js",
+		"/C/Program Files (x86)/Ampps/www/impulsatucredito/readme.html",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/bootstrap-flex.css",
+		"/C/Program Files (x86)/Ampps/www/futgolf/assets/formulario.html",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/main.js",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/plyr.js",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/jquery.viewportchecker.js",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/fastclick.js",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/SplitText.min.js",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/DrawSVGPlugin.min.js",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/TweenMax.min.js",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/parsley.min.js",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/plyr.css",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects/main.css",
+		"/C/Users/JDK/Downloads/projects/www.wokine.com/en/projects/index.html",
+		"/C/Program Files (x86)/Ampps/www/Practicas/projects.html",
+		"/C/Users/JDK/Downloads/base.sql",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/content.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/content-search.php",
+		"/C/Program Files (x86)/Ampps/www/Derrrumbe/adventureland/wp-content/themes/entrada/template-parts/blog-listings.php"
+	],
+	"find":
+	{
+		"height": 52.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "server/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								425,
+								425
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "view/public/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "view/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.nodejs":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "",
+	"project": "chat.sublime-project",
+	"replace":
+	{
+		"height": 55.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"filter.js",
+				"clients\\base\\layouts\\filter\\filter.js"
+			],
+			[
+				"encr",
+				"vendor\\swiftmailer\\swiftmailer\\tests\\_samples\\smime\\encrypt.key"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 399.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "api-instagram",
+  "version": "1.0.0",
+  "description": "api de instagram con platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "juan franco",
+  "license": "ISC"
+}
