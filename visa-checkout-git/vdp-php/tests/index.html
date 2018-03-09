@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visa Checkout</title>
+
+	<script type="text/javascript">
+		function onVisaCheckoutReady(){
+			V.init( {
+				apikey: "KD3RY6XP0CEG0PR61HTS21LeQE-up0HoMZQS18ZkZIzPl730Q",
+				paymentRequest:{
+					currencyCode: "USD",
+					total: "10.00"
+				}
+			});
+
+			V.on("payment.success", function(payment){
+
+				alert(JSON.stringify(payment));
+			});
+			V.on("payment.cancel", function(payment){
+
+				alert(JSON.stringify(payment));
+			});
+			V.on("payment.error", function(payment, error){
+
+				alert(JSON.stringify(error));
+			});
+		}
+	</script>
+</head>
+<body>
+
+	<img alt="Visa Checkout" class="v-button" role="button" src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
+	<script src="https://js.braintreegateway.com/web/3.31.0/js/client.min.js"></script>
+	<script src="https://js.braintreegateway.com/web/3.31.0/js/visa-checkout.min.js"></script>
+	<!--<script type="text/javascript" src="https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/integration/v1/sdk.js"></script>-->
+	<script>
+		// Create a client.
+braintree.client.create({
+  authorization: "z0Oykv}2ZGd-fDXHJ82oPFWK27sfsLaSZ1FH#/Nq"
+  // If using 3D Secure, you must use a client token.
+}, function (clientErr, clientInstance) {
+
+  // Stop if there was a problem creating the client.
+  // This could happen if there is a network error or if the authorization
+  // is invalid.
+  if (clientErr) {
+    console.error('Error creating client:', clientErr);
+    return;
+  }
+
+  // Create a Visa Checkout component.
+  braintree.visaCheckout.create({
+    client: clientInstance
+  }, function (visaCheckoutErr, visaCheckoutInstance) {
+
+    // Stop if there was a problem creating Visa Checkout.
+    // This could happen if there was a network error or if it's incorrectly
+    // configured.
+    if (visaCheckoutErr) {
+      console.error('Error creating VisaCheckout:', visaCheckoutErr);
+      return;
+    }
+
+    visaCheckoutInitialized(visaCheckoutInstance);
+  });
+});
+
+function visaCheckoutInitialized(visaCheckoutInstance) {
+  // Visa Checkout is initialized.
+}
+	</script>
+</body>
+</html>

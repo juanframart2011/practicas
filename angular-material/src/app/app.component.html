@@ -1,0 +1,369 @@
+<div class="container">
+	
+	<h1 class="text-center" mat-header>Nuevo registro</h1>
+	<form action="" method="post">
+	
+		<mat-card>
+			<mat-toolbar class="header-toolbar text-center" role="header">
+				Tipificación
+			</mat-toolbar>
+
+			<mat-card-content>
+				<div class="row">
+	                <mat-form-field class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	                    <mat-select placeholder="*Canal" name="canal">
+	                        <mat-option *ngFor="let canal of canals" [value]="canal.value">
+	                            {{canal.viewValue}}
+	                        </mat-option>
+	                    </mat-select>
+	                </mat-form-field>
+
+	                <mat-form-field class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	                    <mat-select placeholder="*CSQ" name="csq">
+	                        <mat-option *ngFor="let csq of csqs" [value]="csq.value">
+	                            {{csq.viewValue}}
+	                        </mat-option>
+	                    </mat-select>
+	                </mat-form-field>
+	            </div>
+
+	            <br>
+	            <div class="row">
+	                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	                    <mat-form-field>
+	                        <mat-select placeholder="*Tipificación" name="tipificacion">
+	                            <mat-option *ngFor="let tipificacion of tipificacions" [value]="tipificacion.value">
+	                                {{tipificacion.viewValue}}
+	                            </mat-option>
+	                        </mat-select>
+	                    </mat-form-field>
+	                </div>
+
+	                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	                    <mat-form-field>
+	                        <mat-select placeholder="*Interes" name="interes">
+	                            <mat-option *ngFor="let intere of interes" [value]="intere.value">
+	                                {{intere.viewValue}}
+	                            </mat-option>
+	                        </mat-select>
+	                    </mat-form-field>
+	                </div>
+	            </div>
+
+	            <br>
+	            <div class="row">
+	                <mat-form-field class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                    <textarea name="notas" matInput placeholder="Notas" rows="4"></textarea>
+	            	</mat-form-field>
+	            </div>
+			</mat-card-content>
+		</mat-card>
+	</form>
+</div>
+   
+    <!--
+    <div class="form">  
+        <div class="section1" >
+            <div class="form-group row" style="text-align: center;">
+                <div class="col-sm-6">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>*Canal</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>333</option>
+                    </select>
+
+                    <mat-form-field>
+                        <mat-select placeholder="*Canal">
+                            <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{ food.viewValue }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    
+                </div>
+
+                <div class="col-sm-6">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>*CSQ</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row" style="text-align: center;">
+                <div class="col-sm-6">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>*Tipificacion</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-6">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>*Interesa/No interesa</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Notas"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6" style="text-align: center;">
+                <h3>PROSPECTO</h3>
+            </div>
+            <div class="col-sm-6" style="text-align: center;">
+                <h3>QUIEN REGISTRA</h3>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="section1">
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Nombre">
+    </div>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Nombre">
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Apellido Paterno">
+    </div>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Apellido Paterno">
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Apellido Materno">
+    </div>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Apellido Materno">
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Email">
+    </div>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Email">
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Celular">
+    </div>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Celular">
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Telefono">
+    </div>
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>Parentesco</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>Genero</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>Canal Preferido</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <input type="date" class="form-control" placeholder="Fecha de Nacimiento">
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Edad">
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+    </div>
+    </div>
+
+    <div class="section1">
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>Campus</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>Nivel</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>Modalidad</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="No. Persona">
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>Carrera</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="Etapa de Venta">
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>Ciclo</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="No. Cuenta">
+    </div>
+    </div>
+    </div>
+
+    <div class="section1">
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>Campus</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    <div class="col-sm-6">
+    <select class="form-control" id="exampleFormControlSelect1">
+    <option>PI/Equi</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    </select>
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <div class='input-group date' id='datetimepicker1'>
+    <input type='date' class="form-control" />
+    <span class="input-group-addon">
+    <span class="glyphicon glyphicon-calendar"></span>
+    </span>
+    </div>
+    </div>
+    <div class="col-sm-6">
+    <input type='time' class="form-control" />
+    </div>
+    </div>
+
+    <div class="form-group row">
+    <div class="col-sm-6">
+    <label class="checkbox-inline"><input type="checkbox" value="">C|callback</label>
+    </div>
+    <div class="col-sm-6">
+    <label class="checkbox-inline"><input type="checkbox" value="">C|Transferencia en linea</label>
+    </div>
+    </div>      
+    </div>
+    <div class="row" style="margin-top: 40px;">
+    <div class="col-sm-4" style="text-align: center; padding-top: 20px;">
+    <a href="">Captura Referido</a>
+    </div>
+    <div class="col-sm-4" style="text-align: center;">
+    <button type="button" class="btn btn-warning btns">Guardar</button>
+    </div>
+    <div class="col-sm-4" style="text-align: center;">
+    <button type="button" class="btn btn-danger btns">Cancelar</button>
+    </div>
+    </div>
+    </div>-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
