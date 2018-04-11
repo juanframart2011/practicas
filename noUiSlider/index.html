@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="//cdn.bootcss.com/noUiSlider/8.5.1/nouislider.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/noUiSlider/8.5.1/nouislider.js"></script>
+    <style>
+        #showcase {
+            margin: 0 20px;
+            text-align: center;
+        }
+        #range {
+            height: 15px;
+            margin: 0 auto 30px;
+        }
+        #value-span,
+        #value-input {
+            width: 50%;
+            float: left;
+            display: block;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="range"></div>
+</body>
+<script>
+    var keyboardSlider = document.getElementById( 'range' );
+
+    noUiSlider.create(keyboardSlider, {
+        start: 5000,
+        step: 100,
+        range: {
+            'min': 5000,
+            'max': 100000
+        }
+    });
+
+    var valueInput = document.getElementById('value-input'),
+    valueSpan = document.getElementById('value-span');
+
+    range.noUiSlider.on('update', function( values, handle ) {
+
+        console.log( values[handle] );
+        if ( handle ) {
+            //valueInput.value = values[handle];
+        } else {
+            //valueSpan.innerHTML = values[handle];
+        }
+    });
+
+    // When the input changes, set the slider value
+    valueInput.addEventListener('change', function(){
+        range.noUiSlider.set([null, this.value]);
+    });
+</script>
+</html>

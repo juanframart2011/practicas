@@ -1,0 +1,106 @@
+<div class="app container">
+	<div class="row">
+		<div class="col-sm-8">
+			<h1 class="text-center">Welcome to {{ title }}!</h1>
+		</div>
+		<div class="col-sm-4">
+			<div class="alert alert-success alert-dismissable" *ngIf="msg">
+				<a class="close" href="">&times;</a>
+				{{ msqg }}
+			</div>
+		</div>
+	</div>
+    
+    <div class="row">
+        <div class="col-sm-4 text-center">
+            <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+        </div>
+        <div class="col-sm-8">
+        	<h2>Create Data:</h2>
+        	<form action="" class="form-horizontal" method="post">
+        		<div class="form-group">
+        			<label class="control-label col-sm-2" for="name">Name</label>
+        			<div class="col-sm-10">
+        				<input class="form-control" id="name" [(ngModel)]="model.name" placeholder="Enter a new Name" type="text" name="name">
+        			</div>
+        		</div>
+        		<div class="form-group">
+        			<label class="control-label col-sm-2" for="position">Position</label>
+        			<div class="col-sm-10">
+        				<input class="form-control" id="position" [(ngModel)]="model.position" placeholder="Enter a new Position" type="text" name="position">
+        			</div>
+        		</div>
+        		<div class="form-group">
+        			<label class="control-label col-sm-2" for="email">Email</label>
+        			<div class="col-sm-10">
+        				<input class="form-control" id="email" [(ngModel)]="model.email" placeholder="Enter a new Email" type="text" name="email">
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="col-sm-10 col-sm-offset-1 form-group">
+        				<button (click)="addEmployee()" class="btn btn-primary btn-block" type="button">Save</button>
+        			</div>
+        		</div>
+        	</form>
+        </div>
+    </div>
+
+    <div class="row">
+
+    	<div class="col-sm-8">
+    		<h2>Read Data</h2>
+
+    		<table class="table table-bordered">
+    			<thead>
+    				<tr>
+    					<th>Name</th>
+    					<th>Position</th>
+    					<th>Action</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr *ngFor='let employee of employees; let i = index'>
+
+    					<td>{{ employee.name }}</td>
+						<td>{{ employee.position }}</td>
+						<td>
+							<a (click)="deleteEmployee(i)" class="btn btn-warning" href="#">Delete</a>
+							<a (click)="editEmployee(i)" class="btn btn-success" href="#">Edit</a>
+						</td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+
+    	<div class="col-sm-4">
+			<h2>Update Data:</h2>
+        	<form action="" class="form-horizontal" method="post">
+        		<div class="form-group">
+        			<label class="control-label col-sm-2" for="name">Name</label>
+        			<div class="col-sm-10">
+        				<input class="form-control" id="name" [(ngModel)]="model2.name" placeholder="Enter a new Name" type="text" name="name">
+        			</div>
+        		</div>
+        		<div class="form-group">
+        			<label class="control-label col-sm-2" for="position">Position</label>
+        			<div class="col-sm-10">
+        				<input class="form-control" id="position" [(ngModel)]="model2.position" placeholder="Enter a new Position" type="text" name="position">
+        			</div>
+        		</div>
+        		<div class="form-group">
+        			<label class="control-label col-sm-2" for="email">Email</label>
+        			<div class="col-sm-10">
+        				<input class="form-control" id="email" [(ngModel)]="model2.email" placeholder="Enter a new Email" type="text" name="email">
+        			</div>
+        		</div>
+
+        		<div class="form-group">
+        			<div class="col-sm-10 col-sm-offset-1 form-group">
+        				<button (click)="updateEmployee()" class="btn btn-primary btn-block" type="button">Update</button>
+        			</div>
+        		</div>
+        	</form>
+    	</div>
+    </div>
+</div>

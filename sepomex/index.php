@@ -6,8 +6,9 @@
 <body>
 <h1>Leer Excel SepoMex</h1>
 	<?
-	$connect = mysql_connect( "localhost", "root", "mysql" );
-	$db = mysql_selectdb( "sepomex", $connect );
+	$mysqli = new mysqli( 'localhost', 'root', 'mysql', 'sepomex');
+	$mysqli->set_charset("utf8");
+
 	$fila = 0;
 	
 	$estado[1]["id"] = 1;
@@ -75,7 +76,8 @@
 	$estado[32]["id"] = 32;
 	$estado[32]["name"] = "zacatecas";
 
-	for( $est = 1; $est < 33; $est++ ){
+	$municipio_id = 2262;
+	for( $est = 1; $est < 5; $est++ ){
 
 		if( ( $gestor = fopen( $estado[$est]["name"] . ".csv", "r" ) ) !== FALSE ){
 			
@@ -85,7 +87,8 @@
 
 					#Buscar id municipio
 					$municipio_name = $datos[3];
-					$sql_search_municipio = "SELECT * FROM municipio where municipio_name = '".$municipio_name."' and estado_id = ".$estado[$est]["id"]." ";
+					
+					/*$sql_search_municipio = "SELECT * FROM municipio where municipio_name = '".$municipio_name."' and estado_id = ".$estado[$est]["id"]." ";
 					$search_execute_municipio = mysql_query( $sql_search_municipio, $connect );
 					$search_result_municipio = mysql_fetch_array( $search_execute_municipio );
 
@@ -94,25 +97,31 @@
 					$tipo_asentamiento = utf8_decode( $datos[2] );
 					$ciudad = utf8_decode( $datos[5] );
 					$cp = utf8_decode( $datos[6] );
-					$code = $datos[0];
-					$encriptado = md5( $colonia . date( "YmdHis" ) );
+					$code = $datos[0];*/
+					$encriptado = md5( $municipio_name . date( "YmdHis" ) );
 
-					#$sql_search = "SELECT * FROM municipio where municipio_name = '".$municipio."' and estado_id = ".$estado[$est]["id"]." ";
-					$sql_search = "SELECT * FROM codigo_postal where codigoPostal_colonia = '".$colonia."' and municipio_id = ".$municipio." ";
+					#echo 'Estado => ' . $estado[$est]["id"] . ' Municipio => ' . $municipio_name . '<br>';
+					$sql_search = "SELECT * FROM municipio where municipio_name = '".$municipio_name."' and estado_id = ".$estado[$est]["id"]." ";
+					#$sql_search = "SELECT * FROM codigo_postal where codigoPostal_colonia = '".$colonia."' and municipio_id = ".$municipio." ";
 					
-					$search_execute = mysql_query( $sql_search, $connect );
-					$search_result = mysql_num_rows( $search_execute );
+					$search_execute = $mysqli->query( $sql_search );
+					$search_result = $mysqli->num_rows;
 					
-					if( $search_result == 0 && !empty( $colonia ) ){
+					if( $search_result == 0 && !empty( $municipio_name ) ){
 
-						#$sql = "INSERT INTO `municipio` (`estado_id`, `municipio_name`, `municipio_encrypted` ) VALUES ('".$estado[$est]["id"]."', '".$municipio."', '".$encriptado."')";
-						$sql = "INSERT INTO `codigo_postal` (`municipio_id`, `codigoPostal_colonia`, `codigoPostal_encrypted`, codigoPostal_code, codigoPostal_tipoAsentamiento, codigoPostal_ciudad, codigoPostal_cp ) VALUES ('".$municipio."', '".$colonia."', '".$encriptado."', '".$code."', '".$tipo_asentamiento."', '".$ciudad."', '".$cp."' )";
+						$sql = "INSERT INTO `municipio` (`municipio_id`, `estado_id`, `municipio_name`, `municipio_encrypted`, `municipio_creationDate` ) VALUES (".$municipio_id.", '".$estado[$est]["id"]."', '".$municipio_name."', '".$encriptado."', '".date( "Y-m-d H:i:s" )."')";
+						#$sql = "INSERT INTO `codigo_postal` (`municipio_id`, `codigoPostal_colonia`, `codigoPostal_encrypted`, codigoPostal_code, codigoPostal_tipoAsentamiento, codigoPostal_ciudad, codigoPostal_cp ) VALUES ('".$municipio."', '".$colonia."', '".$encriptado."', '".$code."', '".$tipo_asentamiento."', '".$ciudad."', '".$cp."' )";
 
-						$result = mysql_query( $sql );
+						$result = $mysqli->query( $sql );
 
 						if( $result ){
 
-							echo 'Municipio Insertado => ' . $colonia . '<br>';
+							echo 'Municipio Insertado => ' . $municipio_name . ' ' . $municipio_id . '<br>';
+							$municipio_id++;
+						}
+						else{
+
+							#echo 'Municipio NO Insertado => ' . $municipio_name . '<br>';
 						}
 					}
 				}
