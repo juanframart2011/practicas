@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			input{
+
+				margin-bottom: 10px;
+				padding: 10px;
+				width: 70%;
+			}
+			.error{
+				border: solid 1px red;
+			}
+			.success{
+				border: solid 1px green;
+			}
+		</style>
+	</head>
+<body>
+	
+	<form id="form_numeric" name="form_numeric">
+		<input type="text" id="box_1" name="box_1" placeholder="Solo números"><br>
+		<input type="text" id="box_2" name="box_2" placeholder="Solo números"><br>
+		<input type="text" id="box_3" name="box_3" placeholder="Solo números"><br>
+		<button type="submit">Validar</button>
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$( document ).ready( function(){
+
+			$( "#form_numeric" ).submit( function( event ){
+
+				event.preventDefault();
+
+				$( "input" ).removeClass( "error, success" );
+
+				var box_1 = $( "#box_1" );
+				var box_2 = $( "#box_2" );
+				var box_3 = $( "#box_3" );
+
+				if( !parseInt( box_1.val() ) ){
+
+					box_1.addClass( "error" );
+				}
+				else{
+
+					box_1.addClass( 'success' )
+				}
+				if( !parseInt( box_2.val() ) ){
+
+					box_2.addClass( "error" );
+				}
+				else{
+
+					box_2.addClass( 'success' )
+				}
+				if( !parseInt( box_3.val() ) ){
+
+					box_3.addClass( "error" );
+				}
+				else{
+
+					box_3.addClass( 'success' )
+				}
+			});
+		})
+	</script>
+</body>
+</html>
