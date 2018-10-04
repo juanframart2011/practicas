@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Scraping</title>
+</head>
+<body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		const URL = "https://yespornplease.com";
+		let header = new Headers({
+		    'Access-Control-Allow-Origin':'*',
+		    'Content-Type': 'multipart/form-data'
+		});
+		
+		//const URL = "https://videojuegos.mercadolibre.com.co/juego-ps4_Envio_Gratis_DisplayType_NG_OrderId_PRICE*DESC_Discount_40-100#";
+
+		function procesarResultados( html ){
+
+			const arrDatos = [];
+			var matches = null;
+			const expresionRegular = new RegExp( "<>", "g")
+			do{
+				matches = expresionRegular.exec( html );
+				arrDatos.push( matches );
+			}
+			while( matches != null )
+				return jsonDatos;
+		}
+
+		function renderdatosExtraidos( datos ){
+
+			const $divResultados = document.getElementById( "resultados" );
+			$divResultados.innerHTML = "";
+
+			datos.forEach( reg => {
+
+				if( reg ){
+
+					const $card = document.createElement( "div" );
+					$card.classList.add( 'card' );
+					$card.addEventListener( "click", () => {
+						window.open( reg[3] );
+					});
+
+					$card.innerHTML = `
+						<div class="thumb" >
+							<img src="${reg[2]}" />
+						</div>
+						<div class="titulo">${reg[1]}</div>
+						<div class="precio-ant" >
+							<div class="precio">${reg[4]}</div>
+							<div class="dcto">${reg[6]}</div>
+						</div>
+						<div class="dcto">${reg[5]}</div>
+					`
+
+					$divResultados.appendChild( $card ); 
+				}
+			});
+		}
+
+		$.ajax({
+			url: URL,
+			type: 'GET',
+			dataType: 'json',
+			headers: {
+	                    'Access-Control-Allow-Origin':'*',
+		    			'Content-Type': 'multipart/form-data',
+		    			'Access-Control-Allow-Headers': 'accept'
+	                }
+		})
+		.done(function( data ){
+			
+			console.info( data );
+		})
+		.fail(function( error ){
+			
+			console.log( error );
+		});
+
+		/*fetch( URL, sentData ).then( resp => resp.text() ).then( respl => {
+
+		}).catch( error => {
+			console.log( error );
+		});*/
+	</script>
+</body>
+</html>
