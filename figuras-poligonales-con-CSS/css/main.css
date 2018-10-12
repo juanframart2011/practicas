@@ -1,0 +1,16 @@
+.background{
+	background: url(../img/2.jpeg);
+	background-size: cover;
+	height: 100vh;
+
+	-webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+}
+.triangulo{
+	-webkit-clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+	clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+}
+.triangulo_b{
+	-webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0);
+	clip-path: polygon(0% 0%, 50% 100%, 100% 0);
+}
