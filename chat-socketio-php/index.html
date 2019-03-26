@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Socket.IO Chat Example</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+            <!-- aquí aparecerán los mensajes y la caja para escribir nuevos -->
+            <h4 class="titleChat center"></h4>
+			<div class="col s9">
+				<span class="flow-text">
+                    <div class="chatArea">
+					    <ul class="containerMessages">
+                            <!-- aquí van todos los mensajes -->
+                        </ul>
+                    </div>
+                    <input disabled class="msg" placeholder="Escribe aquí tus mensajes..." />
+                </span>
+			</div>
+            <!-- ./aquí aparecerán los mensajes y la caja para escribir nuevos -->
+
+            <!-- aquí aparecerán los usuarios conectados -->
+			<div class="col s3">
+				<span class="flow-text">
+                    <h5 class="center">Usuarios</h5>
+                    <ul id="users" class="center" style="font-size: 14px">
+                        <!-- aquí van todos los usuarios -->
+                    </ul>
+                </span>
+			</div>
+            <!-- ./aquí aparecerán los usuarios conectados -->
+		</div>
+		<div class="row">
+            <!-- aquí apareceráel formulario para iniciar sesión -->
+			<div class="col s9">
+                <form>
+                    <h5 class="title">¿Cuál es tu nombre?</h5>
+                    <input class="username" type="text" maxlength="14" />
+                    <button 
+                        style="width: 100%" 
+                        class="waves-effect waves-light btn blue large" 
+                        type="submit"
+                    >
+                        Entrar
+                    </button>
+                </form>
+                <button 
+                    id="logout" 
+                    style="width: 100%; display: none" 
+                    class="waves-effect waves-light btn red large" 
+                    type="submit"
+                >
+                    Cerrar sesión
+                </button> 
+            </div>
+            <!-- ./aquí apareceráel formulario para iniciar sesión -->
+		</div>
+	</div>
+
+    <!-- carga de los scripts necesarios -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.0/socket.io.js"></script>
+	<script src="js/main.js"></script>
+    <!-- ./carga de los scripts necesarios -->
+</body>
+
+</html>
